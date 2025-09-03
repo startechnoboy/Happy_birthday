@@ -754,6 +754,7 @@
         width: 100%;
         max-width: 240px;
         height: 150px;
+        aspect-ratio: 4 / 3;
         overflow: hidden;
         border-radius: 18px;
         box-shadow: 0 6px 32px rgba(212, 106, 132, 0.18),
@@ -767,7 +768,9 @@
         left: 0;
         width: 100%;
         height: 100%;
+        display: block;
         object-fit: cover;
+        border-radius: inherit;
         opacity: 0;
         transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1);
         z-index: 1;
@@ -779,7 +782,8 @@
       @media (max-width: 600px) {
         .hal1-slider {
           max-width: 95vw;
-          height: 110px;
+          height: auto;
+          aspect-ratio: 4 / 3;
         }
       }
       .birthday-heading {
@@ -898,17 +902,17 @@
       <div class="hal1-slider-container">
         <div class="hal1-slider">
           <img
-            src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80"
+            src="assets/ABC.jpeg"
             alt="Romantic Flowers 1"
             class="hal1-slide active"
           />
           <img
-            src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80"
+            src="assets/DE.jpeg"
             alt="Romantic Flowers 2"
             class="hal1-slide"
           />
           <img
-            src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80"
+            src="assets/gf.jpeg"
             alt="Romantic Flowers 3"
             class="hal1-slide"
           />
@@ -1258,9 +1262,9 @@
         const stiker3 = document.getElementById("stiker3");
         const stiker3a = document.getElementById("stiker3a");
         const stiker3c = document.getElementById("stiker3c");
-        const txtDoa = `Why do I prefer<br><span style='color:pink'>I love you</span> more? 🌹🩷`;
+        const txtDoa = `HAPPY 20TH BIRTHDAY SONAI<br><span style='color:pink'>I love you</span>🌹`;
         const txtPesanAkhir =
-          "Because... I love you more than I said,<br>I love you more than you know,<br>I love you more when your<br>day didn't go so well,<br>I love you more when you cried,<br>I love you more at your lowest,<br>and I love you in every situation ᡣ𐭩<br>😍💐🌹💖❤️";
+          "Because... I love you more than I said,<br>HAPPY BIRTHDAY MAMIMA<br>*MISTI MEY<br>KHUB MOJA KOR , NIJER DREAM GULO PURON KOR PASE A6I ALWAYS<br>BIYE TA KORO<br>and I love you in every situation<br>😍💐🌹💖❤️";
         const speedText = 24;
         new TypeIt("#teksCinta", {
           strings: txtDoa,
